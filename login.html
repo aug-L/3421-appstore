@@ -6,11 +6,32 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="unistyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 col-lg-4">
+                        <label class="sr-only" for="input1-signin-01">Email</label>
+                        <input class="form-control my-3 bg-light" id="input1-signin-01" type="email" placeholder="Email">
+                        <label class="sr-only" for="input2-signin-01">Password</label>
+                        <input class="form-control my-3 bg-light" id="input2-signin-01" type="password" placeholder="Password">
+                        <div class="d-flex">
+                            <button class="btn btn-outline-primary btn-block py-2 mr-3">Sign In</button>
+                            <button class="btn btn-primary btn-block py-2 mt-0">Sign up</button>
+                        </div>
+                        <p class="text-secondary text-muted mt-3">By signing in you agree with the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

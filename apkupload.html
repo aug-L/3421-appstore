@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>3421-appstore</title>
+        <title>Upload apk</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -37,17 +37,29 @@ and open the template in the editor.
             </nav>
         </header>
         <main>
-            <div class="container-fluid text-center">    
-                <div class="row content">
-                    <div>
-                        <h5 style="text-align:center">Welcome to 3421-appstore</h5>
-                        <hr>
-                        <!-- Social forum -->
+            <div class="form_container">
+                <form id="update_form" class="appnitro" enctype="multipart/form-data" method="post" action="/forms/view.php">
+                    <ul>
+                        <li id="li_4">
+                            <label class="description" for="element_4">Update Description </label>
+                            <div>
+                                <textarea id="element_4" name="element_4" class="element textarea medium"></textarea> 
+                            </div><p class="guidelines" id="guide_4"><small>No more than 300 words</small></p> 
+                        </li>		<li id="li_5">
+                            <label class="description" for="element_5">Upload a File </label>
+                            <div>
+                                <input id="element_5" name="element_5" class="element file" type="file"> 
+                            </div>  
+                        </li>
 
-                        <hr>
-                    </div>
-                </div>
-            </div>   
+                        <li class="buttons">
+                            <input type="hidden" name="form_id" value="22455">
+
+                            <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit">
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </main>
 
         <footer class="container-fluid text-muted" id="footer">

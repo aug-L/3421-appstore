@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2021, 2:40:45 AM
+    Author     : lch
+*/
+@font-face {
+   font-family: Roboto-Regular;
+   src: url(Roboto-Regular.ttf);
+}
+
+header,footer{
+    background-color: #edfea1;
+    border-bottom: 1px solid black;border-top: 1px solid black;
+    font-family: Roboto-Regular;
+    height: 4%
+}
+
+body{
+    font-family: Roboto-Regular;
+}
+
+footer{
+    font-size:9px;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   text-align: center;
+
+}
+
+#footer::before{
+    content: "Android is a trademark of Google Inc|Contact us";
+}
+
+.icon-bar{
+    content: url(image/menu-512.png);
+    width: 20px;
+}
+.navbar-brand{
+    content: url(image/logo.png);
+    height: 28px;  
+}
+
+.navbar-nav{
+    background: #ffffff;
+}
+
+.list-group-item
+{
+  overflow:hidden;  
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+

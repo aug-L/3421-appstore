@@ -6,11 +6,91 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Contact us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="unistyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>                  
+                        </button>
+                        <a class="navbar-brand" href="index.html">Logo</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-light">
+                            <li><a href="app_categories/app.html">All App Categories</a></li>
+                            <li><a href="game_categories/game.html">All Game Categories</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="form_container">                    
+                <form id="contact_form" class="appnitro"  method="post" action="">
+                    <div class="form_description">
+                        <h5>Any problem? Contact us!</h5>
+                    </div>						
+                    <ul >
+                        <li id="li_1" class="form-group">
+                            <label class="description" for="element_1">Your name </label>
+                            <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+                        </li>		
+                        <li id="li_2" class="form-group">
+                            <label class="description" for="element_2">Your email </label>
+
+                            <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+
+                        </li>		
+                        <li id="li_3" class="form-group">
+                            <label class="description" for="element_3">Reason for contact </label>
+
+                            <select class="element select medium" id="element_3" name="element_3"> 
+                                <option value="" selected="selected">(please select)</option>
+                                <option value="1" >Website feedback</option>
+                                <option value="2" >Website glitches</option>
+                                <option value="3" >APK update request</option>
+                                <option value="4" >DMCA takedown request</option>
+                                <option value="5" >Advertising</option>
+                                <option value="6" >Others (please specify)</option>
+                            </select>
+                        </li>		
+                        <li id="li_4" class="form-group">
+                            <label class="description" for="element_4">Other reasons </label>
+
+                            <input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+
+                        </li>		
+                        <li id="li_5" class="form-group">
+                            <label class="description" for="element_5">Description </label>
+
+                            <textarea id="element_5" name="element_5" class="element textarea medium" placeholder="No more than 300 words"></textarea> 
+                            <p class="guidelines" id="guide_5"></p> 
+                        </li>
+                        <li class="buttons">
+                            <input type="hidden" name="form_id" value="22455" />
+
+                            <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                        </li>
+                    </ul>
+                </form>	
+            </div>
+
+        </main>
+
+        <footer class="container-fluid text-muted" id="footer">
+
+        </footer>     
     </body>
 </html>
